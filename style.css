@@ -1,5 +1,6 @@
 body {
-    font-family: Roboto, Arial;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    ;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +9,6 @@ body {
 header {
     background-color: #1f2937;
     width: 100%;
-    /* Keep your top/bottom padding to give the background height */
     padding-top: 20px;
     padding-bottom: 120px;
     box-sizing: border-box;
@@ -32,7 +32,7 @@ header {
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     /* height: 60px; */
     background-color: #1f2937;
     box-sizing: border-box;
@@ -78,13 +78,17 @@ header {
     font-size: 48px;
     font-weight: 900;
     margin: 0;
-    color: #f9faf8
+    line-height: 1.1;
+    color: #f9faf8;
+
 }
 
 .intro p {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
     color: #e5e7eb;
+    line-height: 1.5;
+    padding-top: 10px;
 }
 
 .intro button {
@@ -101,10 +105,153 @@ header {
 
 .lower-header .image {
     width: 400px;
-    height: 250px;
+    height: 200px;
     background-color: #9b9b9c;
     display: flex;
     justify-content: center;
     align-items: center;
 
+}
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.section-1 h1 {
+    padding-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-1 div,
+.card-2 div,
+.card-3 div,
+.card-4 div {
+    width: 200px;
+    height: 150px;
+    border-color: #3882f6;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 10px;
+
+}
+
+.card-1 p,
+.card-2 p,
+.card-3 p,
+.card-4 p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #61676f;
+    text-align: center;
+}
+
+.section-2 {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+
+
+
+}
+
+.section-2 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    height: 100%;
+    margin: 0 auto;
+
+
+
+}
+
+.section-2 .text {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.section-2 .author {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    width: 100%;
+    font-weight: bold;
+}
+
+.section-3 {
+    max-width: fit-content;
+    margin: 0 auto;
+    height: 300px;
+    display: flex;
+    align-items: center;
+
+}
+
+.section-3 .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 900px;
+    background-color: #3882f6;
+    border-radius: 8px;
+}
+
+.container .text {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    
+}
+
+.container .text p {
+    margin: 0;
+
+}
+
+.text .up {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.text .down {
+    font-size: 14px;
+    color: #c5d3de;
+}
+
+.container .cta-button {
+    border: solid 2px white;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    padding: 7px 25px;
+    border-radius: 4px;
 }
